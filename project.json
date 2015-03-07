@@ -1,0 +1,46 @@
+{
+    "project_type":"javascript",
+    "debugMode":1,
+    "showFPS":true,
+    "frameRate":60,
+    "id":"gameCanvas",
+    "renderMode":0,
+    "engineDir":"frameworks/cocos2d-html5",
+    "modules":[
+        "cocos2d",
+        "extensions"
+    ],
+    "jsList":[
+        "src/resource.js",
+        "src/config/global.js",
+        "src/config/tankType.js",
+        "src/config/bulletType.js",
+        "src/config/levelElement.js",
+        "src/config/bonusType.js",
+        "src/config/home.js",
+        "src/sound.js",
+        "src/game.js",
+        "src/module/base.js",
+        "src/module/common.js",
+        "src/module/helper.js",
+        "src/module/toolArray.js",
+        "src/layer/gameActionLayer.js",
+        "src/layer/mapLayer.js",
+        "src/layer/bonusLayer.js",
+        "src/layer/gameUILayer.js",
+        "src/sprite/tank.js",
+        "src/sprite/bullet.js",
+        "src/sprite/bonus.js",
+        "src/sprite/home.js",
+        "src/scene/startScene.js",
+        "src/scene/loading.js",
+        "src/scene/gameScene.js",
+        "src/scene/overScene.js",
+        "src/scene/themeScene.js",
+        "src/model/userModel.js",
+        "src/layer/joystickB.js",
+        "src/layer/joystickA.js",
+        "src/unittest/user.js"
+        
+    ]
+}

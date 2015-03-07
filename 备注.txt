@@ -1,0 +1,29 @@
+项目地址：git clone git@58.22.116.15:/home/git/tank.git
+
+
+
+
+未完成的代码：
+
+            //获取与坦克碰撞的瓦片精灵
+            var tankRect = this.collideRect();
+            tankRect.x += this.x;
+            tankRect.y += this.y;
+            var tileSprs = Game.maplayer.getTileSprite(tankRect);
+            if (tileSprs.length > 0) {
+                for (var k in tileSprs) {
+                    //障碍类型
+                    var obstacle = tileSprs[k].obstacle;
+                    if (Game.maplayer.checkObstacleMoveByObstacle(obstacle)) {
+
+                        //碰撞后，如果是玩家坦克则停下来，如果是敌人则转向
+                        if (this.isPlayer()) {
+                            this.isMoving = 0;
+                        } else {
+                            this.setRandDirection();
+                        }
+                        this.setIsCollion(true);
+                        return;
+                    }
+                }
+            }
